@@ -1,6 +1,6 @@
 ---
 title: "PA 3: Using Data Visualization to Find the Penguins"
-author: Ericka Quintero, Aiden
+author: Ericka Quintero, Aiden Roach
 format: html
 editor: source
 execute: 
@@ -9,11 +9,8 @@ execute:
 ---
 
 ```{r}
-#| label: setup
-#| echo: false
 library(tidyverse)
 install.packages("palmerpenguins")
-library(palmerpenguins)
 ```
 
 Today you will be exploring different types of visualizations to uncover which species of penguins reside on different islands.
@@ -84,7 +81,7 @@ I like to tangibly see the data set I will be working with so let's pull the `pe
 ```{r}
 #| label: load-data
 
-data(penguins)
+library(penguins)
 ```
 
 <!-- Change roles (Developer becomes Coder)! -->
@@ -93,7 +90,7 @@ data(penguins)
 
 **What variables are included in these data? What units are the variables measured in? What does each row represent?**
 
-> The variables are flipper length and bill length in mm. Each row represents one penguin.
+> Insert Answer Here
 
 
 
@@ -107,13 +104,7 @@ Use `ggplot2` to draw a barchart of different `species` included in the dataset.
 
 ```{r}
 #| label: barchart
-ggplot(data = penguins) + 
-  geom_bar(aes(x = species),  
-               alpha = 0.5,
-               fill = "blue",
-               color = "black") +
-  labs(x = "Penguin Species",
-       y = "Frequency")
+
 ```
 
 ## Step 6: Scatterplot
