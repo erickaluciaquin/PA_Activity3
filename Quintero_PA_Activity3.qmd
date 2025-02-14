@@ -9,8 +9,11 @@ execute:
 ---
 
 ```{r}
+#| label: setup
+#| echo: false
 library(tidyverse)
 install.packages("palmerpenguins")
+library(palmerpenguins)
 ```
 
 Today you will be exploring different types of visualizations to uncover which species of penguins reside on different islands.
