@@ -123,6 +123,12 @@ Use `ggplot2` to create a scatterplot of the relationship between the bill lengt
 ```{r}
 #| label: scatterplot
 
+ggplot(data = penguins) + 
+  geom_point(mapping = aes(x = bill_length_mm, 
+                           y = bill_depth_mm)) + 
+  labs(x = "Bill length (mm)",
+       y = "Bill depth (mm)")
+  
 ```
 
 ## Step 7: Adding A Categorical Variable
